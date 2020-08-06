@@ -11,12 +11,14 @@ header {
     left: 0;
     overflow: hidden;
     z-index: 1;
+    background-color: white;
 }
 
 .top {
     display: table;
     width: 100%;
     height: calc(65vh - 500px);
+    
 }
 
 .logo {
@@ -24,6 +26,7 @@ header {
     vertical-align: middle;
     text-align: center;
     padding: 10px 0 10px 0;
+    
 }
 
 .title {
@@ -85,6 +88,15 @@ label {
 
 #toggle {
     display: none;
+}
+main {
+    width: auto;
+    margin: 10px 10px;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px green;
+    border-radius: 3px;
+    bottom: 10px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 500px) {
