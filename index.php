@@ -1,3 +1,7 @@
+<?php
+    include 'dbh.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,8 +57,26 @@
     <main>
 
         <div id="quotes">
-        <!--andmebaasis võiks olla tabel, kus on id, tsitaat, autor ja teemad, mille alla see tsitaat sobib.-->
-
+            <!--andmebaasis võiks olla tabel, kus on id, tsitaat, autor ja teemad, mille alla //see tsitaat sobib.-->
+            <?php
+            $sql = "SELECT * FROM quotes LIMIT 1"; //quotes on andmebaasis oleva tabeli nimi
+            $result = mysqli_query(@conn, $sql);
+            if (mysqli_num_rows($result) > 0) {
+                $id = mysqli_fetch_assoc($result)['id']; 
+                //SIIA PEAB HAKKAMA SISSE LUGEMA ÜKS HAAVAL 
+                //JÄRJEST SUUREMA ID NUMBRIGA
+                //UUS TULEB PÄRAST SÜDAÖÖD
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<p>";
+                    echo $row['titaat'];
+                    echo "<br>"
+                    echo $row['autor'];
+                    echo "</p>"
+                }
+            }else {
+                echo "Tsitaate pole!";
+            }
+            ?>
         </div>
     </main>
     <button id="btn">Näita varasemaid</button>
