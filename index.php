@@ -71,7 +71,7 @@
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<p><q>";
                     echo $row['titaat'];
-                    echo "</q><br><cite>"
+                    echo "</q><br><cite>";
                     echo $row['autor'];
                     echo "</cite></p>"
                 }
