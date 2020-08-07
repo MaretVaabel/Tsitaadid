@@ -79,7 +79,9 @@
             ?>
         </div>
     </main>
+     <footer class="buttonPlace">
     <button id="btn">Näita varasemaid</button>
+    </footer>
 </body>
 
 </html>

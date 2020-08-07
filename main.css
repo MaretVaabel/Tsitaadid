@@ -95,28 +95,50 @@ main {
     border: 2px solid gray;
     box-shadow: 0 0 10px green;
     border-radius: 3px;
-    bottom: 20px;
     height: 100%;
 }
-#btn {
-    bottom: 10px;
+.buttonPlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
-@media only screen and (max-width: 500px) {
+#btn {
+    background-color: gainsboro;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    bottom: 10px;
+    text-transform: uppercase;
+}
+#btn:hover {
+   color: dimgray;
+}
+
+@media only screen and (max-width: 600px) {
     label {
         display: block;
         cursor: pointer;
     }
 
     .menu {
-        text-align: left;
+        text-align: center;
         width: 100%;
         display: none;
+    }
+    .menu ul {
+        width: auto;
     }
 
     .menu ul li {
         display: block;
         text-align: center;
+        padding: 10px;
         border-bottom: 1px solid gray;
+        width: 85%;
+        
 
     }
 
@@ -130,5 +152,6 @@ main {
 
     .navbar {
         background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+        margin: 0;
     }
 }
