@@ -73,7 +73,7 @@
                     echo $row['titaat'];
                     echo "</q><br><cite>";
                     echo $row['autor'];
-                    echo "</cite></p>"
+                    echo "</cite></p>";
                 }
             }else {
                 echo "Tsitaate pole!";

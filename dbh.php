@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost"; 
+$servername = "tsitaadipesa.ee"; 
 $username = "root";
 $password = "";
 $dbname = "ajax"; // siia peab tulema andmebaasi nimi, kus on tsitaadid
