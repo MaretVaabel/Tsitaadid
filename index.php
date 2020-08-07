@@ -57,7 +57,9 @@
     <main>
 
         <div id="quotes">
+            <img src="background.jpg" alt="https://pixabay.com/photos/background-background-view-of-nature-1606047/" />
             <!--andmebaasis võiks olla tabel, kus on id, tsitaat, autor ja teemad, mille alla //see tsitaat sobib.-->
+            <div class="text">
             <?php
             $sql = "SELECT * FROM quotes LIMIT 1"; //quotes on andmebaasis oleva tabeli nimi
             $result = mysqli_query(@conn, $sql);
@@ -67,20 +69,21 @@
                 //JÄRJEST SUUREMA ID NUMBRIGA
                 //UUS TULEB PÄRAST SÜDAÖÖD
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<p>";
+                    echo "<p><q>";
                     echo $row['titaat'];
-                    echo "<br>"
+                    echo "</q><br><cite>"
                     echo $row['autor'];
-                    echo "</p>"
+                    echo "</cite></p>"
                 }
             }else {
                 echo "Tsitaate pole!";
             }
             ?>
+            </div>
         </div>
     </main>
-     <footer class="buttonPlace">
-    <button id="btn">Näita varasemaid</button>
+    <footer class="buttonPlace">
+        <button id="btn">Näita varasemaid</button>
     </footer>
 </body>
 

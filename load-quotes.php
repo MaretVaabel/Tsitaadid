@@ -11,11 +11,11 @@
                 //SIIA tuleb rohkem tsitaate sisse
                 //JÄRJEST väiksema ID NUMBRIGA
         while ($row = mysqli_fetch_assoc($result)) {
-            echo "<p>";
-            echo $row['titaat'];
-            echo "<br>"
-            echo $row['autor'];
-            echo "</p>"
+                echo "<p><q>";
+                echo $row['titaat'];
+                echo "</q><br><cite>"
+                echo $row['autor'];
+                echo "</cite></p>"
         }
     }else {
         echo "Tsitaate pole!";

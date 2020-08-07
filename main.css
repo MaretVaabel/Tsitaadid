@@ -18,7 +18,7 @@ header {
     display: table;
     width: 100%;
     height: calc(65vh - 500px);
-    
+
 }
 
 .logo {
@@ -26,7 +26,7 @@ header {
     vertical-align: middle;
     text-align: center;
     padding: 10px 0 10px 0;
-    
+
 }
 
 .title {
@@ -89,20 +89,14 @@ label {
 #toggle {
     display: none;
 }
-main {
-    width: auto;
-    margin: 10px 10px;
-    border: 2px solid gray;
-    box-shadow: 0 0 10px green;
-    border-radius: 3px;
-    height: 100%;
-}
+
 .buttonPlace {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
+
 #btn {
     background-color: gainsboro;
     padding: 10px 20px;
@@ -112,9 +106,60 @@ main {
     border-radius: 5px;
     bottom: 10px;
     text-transform: uppercase;
+    border: 1px solid black;
 }
+
 #btn:hover {
-   color: dimgray;
+    color: dimgray;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#quotes {
+    width: 300px;
+    margin: 10px 10px;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px green;
+    border-radius: 3px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+#quotes img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    display: block;
+    position: absolute;
+    z-index: -1;
+
+
+}
+
+.text {
+    display: flex;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+q {
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 2px
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,6 +173,7 @@ main {
         width: 100%;
         display: none;
     }
+
     .menu ul {
         width: auto;
     }
@@ -138,7 +184,7 @@ main {
         padding: 10px;
         border-bottom: 1px solid gray;
         width: 85%;
-        
+
 
     }
 
